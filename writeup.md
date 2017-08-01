@@ -6,7 +6,10 @@
 
 ### Dataset summary
 
-TODO
+Number of training examples = 34799
+Number of testing examples = 12630
+Image data shape = (32, 32, 3)
+Number of classes = 43
 
 ### Exploratory visualization
 
@@ -22,7 +25,7 @@ The following steps are used for pre-processing:
 
 **Conversion to grayscale:** We convert the image to grayscale. This can be thought of as dimensionality reduction, since we go from 3 channels to just 1 channel.
 
-![Image after grayscaling](write_images/grayscale_img.png)
+![Image after grayscaling](writeup_images/grayscale_img.png)
 
 **Normalize image:** The numbers in grayscale are between 0 to 255. In this phase, we convert it to range from -1 to 1 (mean 0, std dev 1).
 
@@ -79,35 +82,35 @@ I got the following results:
 1. Test accuracy: 0.931
 
 **Plot of loss vs. batch**
-![Loss vs. batch](write_images/losses.png)
+![Loss vs. batch](writeup_images/losses.png)
 
 **Plot of training acc. vs. batch**
-![Training acc. vs. batch](write_images/training_acc.png)
+![Training acc. vs. batch](writeup_images/training_acc.png)
 
 ### Test on new images
 
-**Do not enter**
+**1. Do not enter**
 ![](internet_images/do_not_enter.jpg)
 
 This sign should be easy to classify since it's not skewed very much.
 
-**Pedestrian caution on using mobile phones**
+**2. Pedestrian caution on using mobile phones**
 ![](internet_images/mobile.jpg)
 
 This is a new one, so the training set didn't have it. So I'm pretty sure that the classifier might not be able to classify it properly, but it still looks similar to relevant "pedestrian" signs.
 
-**Speed limit (50)**
+**3. Speed limit (50)**
 ![](internet_images/speed_limit.jpg)
 
 This should get classified properly, although the skew might be too much.
 
-**Stop**
+**4. Stop**
 ![](internet_images/stop.jpg)
 
 Should get classified trivially.
 
-**Turn right on red for bikes**
-![](internet_images/turn_right_red.jpg)
+**5. Turn right on red for bikes**
+![](internet_images/turn_right_red.JPG)
 
 Probably not, because it's an unusual one again.
 
