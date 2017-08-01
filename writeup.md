@@ -82,9 +82,11 @@ I got the following results:
 1. Test accuracy: 0.931
 
 **Plot of loss vs. batch**
+
 ![Loss vs. batch](writeup_images/losses.png)
 
 **Plot of training acc. vs. batch**
+
 ![Training acc. vs. batch](writeup_images/training_acc.png)
 
 ### Test on new images
@@ -115,6 +117,8 @@ Should get classified trivially.
 Probably not, because it's an unusual one again.
 
 ### Test results
+
+20% accuracy on internet images. (I probably selected adversarial ones)
 
 | Image                 |     Prediction                                | 
 |:---------------------:|:---------------------------------------------:| 
